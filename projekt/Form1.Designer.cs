@@ -30,15 +30,16 @@
         {
             button1 = new Button();
             button2 = new Button();
-            Cena1 = new TextBox();
+            textBox1 = new TextBox();
             Cena = new Label();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(54, 119);
+            button1.Location = new Point(77, 198);
+            button1.Margin = new Padding(4, 5, 4, 5);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(107, 38);
             button1.TabIndex = 0;
             button1.Text = "Komputer";
             button1.UseVisualStyleBackColor = true;
@@ -46,40 +47,45 @@
             // 
             // button2
             // 
-            button2.Location = new Point(177, 119);
+            button2.Location = new Point(253, 198);
+            button2.Margin = new Padding(4, 5, 4, 5);
             button2.Name = "button2";
-            button2.Size = new Size(75, 23);
+            button2.Size = new Size(107, 38);
             button2.TabIndex = 1;
             button2.Text = "Monitor";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
-            // Cena1
+            // textBox1
             // 
-            Cena1.Location = new Point(350, 119);
-            Cena1.Name = "Cena1";
-            Cena1.Size = new Size(100, 23);
-            Cena1.TabIndex = 2;
+            textBox1.Location = new Point(500, 198);
+            textBox1.Margin = new Padding(4, 5, 4, 5);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(141, 31);
+            textBox1.TabIndex = 2;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // Cena
             // 
             Cena.AutoSize = true;
-            Cena.Location = new Point(350, 90);
+            Cena.Location = new Point(500, 150);
+            Cena.Margin = new Padding(4, 0, 4, 0);
             Cena.Name = "Cena";
-            Cena.Size = new Size(45, 15);
+            Cena.Size = new Size(68, 25);
             Cena.TabIndex = 3;
             Cena.Text = "Cena zl";
             Cena.Click += Cena_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(736, 450);
+            ClientSize = new Size(1051, 750);
             Controls.Add(Cena);
-            Controls.Add(Cena1);
+            Controls.Add(textBox1);
             Controls.Add(button2);
             Controls.Add(button1);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Form1";
             Text = "Kalkulator Zestawów Komputerowych";
             ResumeLayout(false);
@@ -90,7 +96,7 @@
 
         private Button button1;
         private Button button2;
-        private TextBox Cena1;
+        private TextBox textBox1;
         private Label Cena;
     }
 }
