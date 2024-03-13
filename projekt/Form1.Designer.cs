@@ -31,7 +31,7 @@
             button1 = new Button();
             button2 = new Button();
             textBox1 = new TextBox();
-            Cena = new Label();
+            label1 = new Label();
             SuspendLayout();
             // 
             // button1
@@ -65,23 +65,22 @@
             textBox1.TabIndex = 2;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
-            // Cena
+            // label1
             // 
-            Cena.AutoSize = true;
-            Cena.Location = new Point(500, 150);
-            Cena.Margin = new Padding(4, 0, 4, 0);
-            Cena.Name = "Cena";
-            Cena.Size = new Size(68, 25);
-            Cena.TabIndex = 3;
-            Cena.Text = "Cena zl";
-            Cena.Click += Cena_Click;
+            label1.AutoSize = true;
+            label1.Location = new Point(500, 155);
+            label1.Name = "label1";
+            label1.Size = new Size(65, 25);
+            label1.TabIndex = 3;
+            label1.Text = "cena zl";
+            label1.Click += label1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1051, 750);
-            Controls.Add(Cena);
+            Controls.Add(label1);
             Controls.Add(textBox1);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -97,6 +96,6 @@
         private Button button1;
         private Button button2;
         private TextBox textBox1;
-        private Label Cena;
+        private Label label1;
     }
 }
