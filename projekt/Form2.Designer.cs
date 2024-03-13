@@ -135,6 +135,7 @@
             radioButton3.TabStop = true;
             radioButton3.Text = "1000 GB SATA";
             radioButton3.UseVisualStyleBackColor = true;
+            radioButton3.CheckedChanged += radioButton3_CheckedChanged_1;
             // 
             // comboBox1
             // 
@@ -189,7 +190,6 @@
             Margin = new Padding(4, 5, 4, 5);
             Name = "Komputer";
             Text = "Komputer";
-            //Load += Komputer_Load;
             ResumeLayout(false);
             PerformLayout();
         }

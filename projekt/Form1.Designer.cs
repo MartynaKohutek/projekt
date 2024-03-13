@@ -95,7 +95,7 @@
 
         private Button button1;
         private Button button2;
-        private TextBox textBox1;
+        public TextBox textBox1;
         private Label label1;
     }
 }

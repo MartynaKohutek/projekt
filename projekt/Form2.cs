@@ -73,18 +73,14 @@ namespace projekt
 
         }
 
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        private void radioButton3_CheckedChanged_1(object sender, EventArgs e)
         {
             if (radioButton3.Checked)
             {
                 cena_dysku = 3000;
                 textBox2.Text = cena_dysku.ToString();
             }
-
         }
-
-
-
     }
 
 }
