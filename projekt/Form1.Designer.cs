@@ -73,7 +73,7 @@
             label1.Size = new Size(65, 25);
             label1.TabIndex = 3;
             label1.Text = "cena zl";
-            label1.Click += label1_Click;
+            //label1.Click += label1_Click;
             // 
             // Form1
             // 
